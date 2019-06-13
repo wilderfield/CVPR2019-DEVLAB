@@ -9,13 +9,33 @@ We have the following sections:
 3. [Jupyter Notebook: ML Suite Caffe Flow End2End w/ MNIST Dataset](#section-3-ml-suite-caffe-flow-end2end-w-mnist-dataset)
 4. [CLI: Real Application - Face Detection in Xilinx FPGAs on AWS](#section-4-real-application---face-detection-in-xilinx-fpgas)
   
-All sections require you to be running the Xilinx ML Suite Caffe Docker container provided in this instance.
-  
-Should you need to refer back to this instruction while in the container, you can view it in /opt/ml-suite/share/README.md  
+All sections require you to be running the Xilinx ML Suite Caffe Docker container provided in your AWS instance.  
 
+This instruction exists in three places:  
+1. [https://github.com/wilderfield/CVPR2019-DEVLAB](https://github.com/wilderfield/CVPR2019-DEVLAB)
+2. /home/ubuntu/README.md
+3. /home/ubuntu/share/README.md  
+  `this is for ease of viewing while inside the docker container`  
+  
+# Connecting to your AWS instance
+On the day of the developer lab, you will be given:  
+1. AWS account id/alias.  
+  `xilinx-aws-f1-developer-labs`  
+2. user name  
+  `user51` (example)  
+3. password  
+  `xilinx_ml` (example)
+  
+Use the provided credentials to login to the AWS Console at [https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin](https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin)  
+  
+Once you are in, start your instance.
+
+
+  
 # Starting the Container
 Xilinx has provided a bash script to start the container, and mount the necessary system resources.  
-It also creates a directory `/home/ubuntu/share` which can be used to easily pass files back and forth between the host OS, and the running docker container.  
+It also creates a directory `/home/ubuntu/share`  
+The directory can be used to pass files back and forth between the host OS, and the running docker container.  
 Inside the container, the directory is mounted as `/opt/ml-suite/share`  
 By default the container will be removed upon exit, so any changes you make outside of the `/opt/ml-suite/share` directory will be lost.  
 To change this behavior, you can remove the --rm flag in `docker_run.sh`  
