@@ -7,7 +7,7 @@ We have the following sections:
 1. [Jupyter Notebook: ML Suite Caffe Flow w/ Pretrained Model](#section-1-ml-suite-caffe-flow-w-pretrained-model)
 2. [CLI: Benchmark The Performance of a Model](#section-2-benchmark-the-performance-of-a-model)
 3. [Jupyter Notebook: ML Suite Caffe Flow End2End w/ MNIST Dataset](#section-3-ml-suite-caffe-flow-end2end-w-mnist-dataset)
-4. [CLI: Real Application - Face Detection in Xilinx FPGAs on AWS](#section-4-real-application-face-detection-in-xilinx-fpgas)
+4. [CLI: Real Application - Face Detection in Xilinx FPGAs on AWS](#section-4-real-application---face-detection-in-xilinx-fpgas)
   
 All sections require you to be running the Xilinx ML Suite Caffe Docker container provided in this instance.
   
