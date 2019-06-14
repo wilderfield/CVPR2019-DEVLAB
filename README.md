@@ -208,3 +208,13 @@ Here we will walk through sending webcam captured frames from your laptop to a F
     https://github.com/wilderfield/webcam-client
   # Go there in a web browser on your local laptop
   ``` 
+  
+# Summary and Call To Action
+- Xilinx FPGAs are featured in the AWS Elastic Cloud, at a lower price point versus top tier GPUs.  
+- Xilinx FPGAs enable custom designs for application acceleration that other hardware simply can't do.  
+- In the case of Convolutional Neural Network acceleration, Xilinx is enabling customers with [ML Suite 1.4](https://github.com/Xilinx/ml-suite).  
+- The next release of ML Suite will feature TensorFlow support.
+- You are encouraged to explore the ML Suite materials we have on github.
+- Ask questions/Discuss in the [forum](https://forums.xilinx.com/t5/Xilinx-ML-Suite/bd-p/ML).
+- Reach out to Bryan Lozano for more information, or to discuss business opportunities.  
+- bryan.lozano@xilinx.com
