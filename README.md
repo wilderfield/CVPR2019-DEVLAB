@@ -1,4 +1,4 @@
-# Xilinx ML Suite on AWS @ CVPR : Developer Lab
+# Xilinx ML Suite on AWS @ CVPR : ML Developer Lab
 
 Today we will walk through how to use Xilinx's [ML Suite 1.4](https://github.com/Xilinx/ml-suite) to target Xilinx FPGAs for deployment.  
 
