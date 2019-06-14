@@ -203,11 +203,8 @@ Here we will walk through sending webcam captured frames from your laptop to a F
 2. Start the Flask RESTful server  
   `$ cd /opt/ml-suite/share/mp_detect_clean && python app.py `
 3. Set up the client side software to send webcam frames from your laptop to the RESTful server.  
-  ```
-  # Detailed instructions provided here:
-    https://github.com/wilderfield/webcam-client
-  # Go there in a web browser on your local laptop
-  ``` 
+  - Detailed instructions provided here:
+  [https://github.com/wilderfield/webcam-client](https://github.com/wilderfield/webcam-client)
   
 # Summary and Call To Action
 - Xilinx FPGAs are featured in the AWS Elastic Cloud, at a lower price point versus top tier GPUs.  
