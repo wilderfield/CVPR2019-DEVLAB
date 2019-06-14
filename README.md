@@ -28,7 +28,7 @@ On the day of the developer lab, you will be given:
   
 Use the provided credentials to login to the AWS Console at [https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin](https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin)  
   
-Once you are in, navigate to Services -> EC2, and start your instance. It should be named with your user name.  
+Once you are in, ensure that your region is set to us-east-1, navigate to Services -> EC2, and start your instance. It should be named with your user name.  
   
 Once your instance is started, you will be able to ssh into it using the public DNS which should be displayed in the AWS console a few seconds after starting the instace.  
 **Your SSH username is ubuntu**  
