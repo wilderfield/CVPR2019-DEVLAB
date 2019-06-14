@@ -17,7 +17,7 @@ This instruction exists in three places:
 3. /home/ubuntu/share/README.md  
   `this is for ease of viewing while inside the docker container`  
   
-# Connecting to your AWS instance
+## Connecting to your AWS instance
 On the day of the developer lab, you will be given:  
 1. AWS account id/alias.  
   `xilinx-aws-f1-developer-labs`  
@@ -62,7 +62,7 @@ If you are working on a Windows laptop, I recommend installing [Git Bash](https:
   
 If you are working on Mac OSx, you can use the standard terminal, or [Git Bash](https://sourceforge.net/projects/git-osx-installer/files/git-2.21.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect)
   
-# Starting the Container
+## Starting the Container
 Xilinx has provided a bash script to start the container, and mount the necessary system resources.  
 It also creates a directory `/home/ubuntu/share`  
 The directory can be used to pass files back and forth between the host OS, and the running docker container.  
