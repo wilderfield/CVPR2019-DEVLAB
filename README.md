@@ -216,5 +216,4 @@ Here we will walk through sending webcam captured frames from your laptop to a F
 - The next release of ML Suite will feature TensorFlow support.
 - You are encouraged to explore the ML Suite materials we have on github.
 - Ask questions/Discuss in the [forum](https://forums.xilinx.com/t5/Xilinx-ML-Suite/bd-p/ML).
-- Reach out to Bryan Lozano for more information, or to discuss business opportunities.  
-- bryan.lozano@xilinx.com
+- Reach out to bryan.lozano@xilinx.com for more information, or to discuss business opportunities.  
