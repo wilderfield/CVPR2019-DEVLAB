@@ -60,7 +60,7 @@ ubuntu@ip-172-31-60-66:~$
   
 If you are working on a Windows laptop, I recommend installing [Git Bash](https://github.com/git-for-windows/git/releases/download/v2.22.0.windows.1/Git-2.22.0-64-bit.exe) to use as your shell for ssh.
   
-If you are working on Mac OSx, you can use the standard terminal, or [Git Bash}(https://sourceforge.net/projects/git-osx-installer/files/git-2.21.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect)
+If you are working on Mac OSx, you can use the standard terminal, or [Git Bash](https://sourceforge.net/projects/git-osx-installer/files/git-2.21.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect)
   
 # Starting the Container
 Xilinx has provided a bash script to start the container, and mount the necessary system resources.  
