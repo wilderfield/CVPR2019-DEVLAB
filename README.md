@@ -118,7 +118,7 @@ The IMAGNET images will be used for quantization, as well as for testing the qua
 
 
 # Section 2: Benchmark The Performance of a Model  
-For this part of the lab, you will use some provided scripts to check the performance of the model you prepared in Section 1.  
+For this part of the lab, you will use some provided scripts to check the performance of the model you prepared.  
 You should have a quantized & compiled model in `/opt/ml-suite/notebooks/work/`  
 The artifacts will correspond to whichever model you chose in the notebook's drop down cell.  
 In this step we will simply feed these artifacts into a script you can use for benchmarking.  
