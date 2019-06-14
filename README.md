@@ -136,8 +136,12 @@ To unpack the switches we are using here...
 -ns tells mp_classify to use a certain number of streams. This boils down to, how many images will you enqueue in the host before sending them to hardware.  
      Enqueing 2 images per PE is a good way to make sure that the hardware is always busy and throughput is maximized, although this will increase system latency.  
 ```
-
-1. Feed your prepared model into `mp_classify.py`  
+1. Quick hack to reload the FPGA, and therefore clear counters.  
+  ```
+  # This will be fixed in future releases, for now we need to load some other FPGA binary to clear FPGA counters, before we benchmark.
+  $ /opt/xilinx/xrt/bin/awssak program -p ../../overlaybins/aws/overlay_2.xclbin
+  ```
+2. Feed your prepared model into `mp_classify.py`  
   ```
   $ cd $MLSUITE_ROOT/examples/deployment_modes && \
     ./run.sh -cn ../../notebooks/work/compiler.json \
@@ -146,7 +150,7 @@ To unpack the switches we are using here...
              -d $HOME/CK-TOOLS/dataset-imagenet-ilsvrc2012-val-min \
              -t streaming_classify_fpgaonly -x -v -ns 2 | python $MLSUITE_ROOT/xfdnn/rt/scripts/speedometer.py  
   ```
-2. View the report.
+3. View the report.
   ```
   # Should See Something Like This (ResNet50) w/ 2 streams
    
@@ -167,7 +171,7 @@ To unpack the switches we are using here...
   FPGA utilization    : 100.00%
   End-to-end latency  : 7.16 ms (FPGA is 66% oversubscribed)
   ``` 
-3. Kill the benchmark scripts with: CTRL+Z; kill -9 %%
+4. Kill the benchmark scripts with: CTRL+Z; kill -9 %%
 
 # Section 3: ML Suite Caffe Flow End2End w/ MNIST Dataset  
 For this part of the lab, you will use a Jupyter Notebook.  
