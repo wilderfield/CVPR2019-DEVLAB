@@ -22,15 +22,45 @@ On the day of the developer lab, you will be given:
 1. AWS account id/alias.  
   `xilinx-aws-f1-developer-labs`  
 2. user name  
-  `user51` (example)  
+  `user21` (example) (use your unique user name)  
 3. password  
-  `xilinx_ml` (example)
+  `cvpr_mlsuite` (example)
   
 Use the provided credentials to login to the AWS Console at [https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin](https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin)  
   
-Once you are in, start your instance.
+Once you are in, navigate to Services -> EC2, and start your instance. It should be named with your user name.  
+  
+Once your instance is started, you will be able to ssh into it using the public DNS which should be displayed in the AWS console a few seconds after starting the instace.  
+**Your SSH username is ubuntu**  
+**Your SSH password is cvpr_mlsuite**  
+example:  
+```
+$ ssh ubuntu@ec2-54-157-168-30.compute-1.amazonaws.com
+The authenticity of host 'ec2-54-157-168-30.compute-1.amazonaws.com (54.157.168.30)' can't be established.
+ECDSA key fingerprint is SHA256:4rILY39CzsV9vLdmAbSFJOvoI8vg8sqeUhwOdHf2DSs.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ec2-54-157-168-30.compute-1.amazonaws.com,54.157.168.30' (ECDSA) to the list of known hosts.
+ubuntu@ec2-54-157-168-30.compute-1.amazonaws.com's password:
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1083-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+20 packages can be updated.
+4 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
 
 
+Last login: Thu Jun 13 23:47:57 2019 from 149.199.62.130
+ubuntu@ip-172-31-60-66:~$
+```
+  
+If you are working on a Windows laptop, I recommend installing [Git Bash](https://github.com/git-for-windows/git/releases/download/v2.22.0.windows.1/Git-2.22.0-64-bit.exe) to use as your shell for ssh.
+  
+If you are working on Mac OSx, you can use the standard terminal, or [Git Bash}(https://sourceforge.net/projects/git-osx-installer/files/git-2.21.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect)
   
 # Starting the Container
 Xilinx has provided a bash script to start the container, and mount the necessary system resources.  
