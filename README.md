@@ -33,7 +33,7 @@ Once you are in, ensure that your region is set to us-east-1, navigate to Servic
 Once your instance is started, you will be able to ssh into it using the public DNS which should be displayed in the AWS console a few seconds after starting the instace.  
 **Your SSH username is ubuntu**  
 **Your SSH password is cvpr_mlsuite**  
-example:  
+example (Use your own public-dns):  
 ```
 $ ssh ubuntu@ec2-54-157-168-30.compute-1.amazonaws.com
 The authenticity of host 'ec2-54-157-168-30.compute-1.amazonaws.com (54.157.168.30)' can't be established.
