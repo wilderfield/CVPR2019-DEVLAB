@@ -139,7 +139,7 @@ To unpack the switches we are using here...
 1. Quick hack to reload the FPGA, and therefore clear counters.  
   ```
   # This will be fixed in future releases, for now we need to load some other FPGA binary to clear FPGA counters, before we benchmark.
-  $ /opt/xilinx/xrt/bin/awssak program -p ../../overlaybins/aws/overlay_2.xclbin
+  $ /opt/xilinx/xrt/bin/awssak program -p /opt/ml-suite/overlaybins/aws/overlay_2.xclbin
   ```
 2. Feed your prepared model into `mp_classify.py`  
   ```
